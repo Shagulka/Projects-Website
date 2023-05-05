@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>проекты</title>
+</head>
+
+<body>
+    <h1>проекты Васи</h1>
+    <div>
+        <p>мои проекты:</p>
+        <ol>
+            {% for project in projects %}
+            <li><strong>{{ project.name }}</strong> - {{ project.description }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+    <footer>
+        <a href="../index.html">главная страница</a>
+    </footer>
+</body>
+</html>
